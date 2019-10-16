@@ -19,7 +19,7 @@ const monologueLines = [
 
 let totalBatteries = function(){
   console.log("ran")
-  return batteryBatches.reduce(combine, 0)
+  return batteryBatches.reduce(combine)
 }
 
 function combine(x, y){
@@ -27,6 +27,6 @@ function combine(x, y){
 }
 
 wordCountMap = function(monologueLines){
-  monologueLines.reduce(wordCountMap)
+  monologueLines.reduce(wordReducer)
 }
 
