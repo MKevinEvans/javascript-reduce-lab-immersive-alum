@@ -45,6 +45,7 @@ function countLengths(accumulatorObject, item){
   } else {
     accumulatorObject[item] = 1;
   }
+  return accumulatorObject;
 }
 
 
