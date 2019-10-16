@@ -26,5 +26,7 @@ function combine(x, y){
   return x += y
 }
 
-
+wordCountMap = function(monologueLines){
+  monologueLines.reduce(wordCountMap)
+}
 
