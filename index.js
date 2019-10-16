@@ -42,6 +42,8 @@ function numberOfWordsEachLine(array){
 function countLengths(accumulatorObject, item){
   if(item in accumulatorObject){
     accumulatorObject[item]++
+  } else {
+    accumulatorObject[item] = 1;
   }
 }
 
