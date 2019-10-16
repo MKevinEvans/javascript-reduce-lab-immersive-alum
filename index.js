@@ -32,7 +32,7 @@ wordCountMap = function(monologueLines){
 
 function wordReducer(array){
   let lengths = numberOfWordsEachLine(array);
-  return lengths.reduce(countLengths)
+  return lengths.reduce(countLengths, {})
 }
 
 function numberOfWordsEachLine(array){
