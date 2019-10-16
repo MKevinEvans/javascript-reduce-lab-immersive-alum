@@ -36,7 +36,7 @@ function wordReducer(array){
 }
 
 function numberOfWordsEachLine(array){
-  return array.map((line)=>line.split(" ").length);
+  return array.map((line)=>line.split(" ").length.toString());
 }
 
 function countLengths(accumulatorObject, item){
